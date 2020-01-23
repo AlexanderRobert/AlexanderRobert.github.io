@@ -29,8 +29,8 @@
 										<ul>
 											<li><a href="index.html">Home</a></li>
 											<li><a href="generic.html">Projects</a></li>
-											<li><a href="elements.html">About Me</a></li>
-											<li><a href="#">Sign Up</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="#">About the group</a></li>
 											<li><a href="#">Log In</a></li>
 										</ul>
 									</div>
@@ -47,7 +47,8 @@
 							University of Iceland<br />
 							Spring of 2020<br />
 							<ul class="actions special">
-								<li><a href="#" class="button primary">Byrja</a></li>
+								<li><a input type="button" class="button primary" onclick="play()">Get started</a></li>
+                                <audio id="audio" src="images/singing.ogg" ></audio>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn more</a>
@@ -84,8 +85,8 @@
 						<section class="spotlight">
 							<div class="image"><img src="images/giphy.gif" alt="" /></div><div class="content">
 								<h2>The fundamental theorem of algebra</h2>
-								<p>Every polynomial of degree n with real or complex coefficients has exactly n complex roots, when counting individually any repeated roots.<br />
-                                Proof: If α is a real or complex root of the polynomial p(z) of degree n with real or complex coefficients, then by dividing this polynomial by (z–α), using the well-known polynomial division process, one obtains p(z)=(z–α)q(z)+r, where q(z) has degree n–1 and r is a constant. But note that p(α)=r=0, so that p(z)=(z–α)q(z). Continuing by induction, we conclude that the original polynomial p(z) has exactly n complex roots, although some might be repeated.</p>
+								<p><b>Theorem:</b> Every polynomial of degree n with real or complex coefficients has exactly n complex roots, when counting individually any repeated roots.<br />
+                                <b>Proof:</b> If α is a real or complex root of the polynomial p(z) of degree n with real or complex coefficients, then by dividing this polynomial by (z–α), using the well-known polynomial division process, one obtains p(z)=(z–α)q(z)+r, where q(z) has degree n–1 and r is a constant. But note that p(α)=r=0, so that p(z)=(z–α)q(z). Continuing by induction, we conclude that the original polynomial p(z) has exactly n complex roots, although some might be repeated.</p>
 							</div>
 						</section>
 						<section class="spotlight">
@@ -120,6 +121,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script>
+            var isPlaying = false;
+            function play(){
+                var audio = document.getElementById("audio");
+                if (isPlaying){
+                    audio.pause();
+                    isPlaying=false;
+                }
+                else {
+                    audio.play();
+                    isPlaying= true;
+                }
+            }
+            </script>
 
 	</body>
 </html>
