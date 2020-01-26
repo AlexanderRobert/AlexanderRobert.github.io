@@ -1,0 +1,780 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Alexander Róbert Magnússon</h2>
+							<p>Manufacturing Processes<br />
+							University of Iceland<br />
+							Spring of 2020<br />
+							<ul class="actions special">
+								<li><a input type="button" class="button primary" onclick="play()">Get started</a></li>
+                                <audio id="audio" src="images/singing.ogg" ></audio>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn more</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>My values</h2>
+								<p><span>&#8226;</span>Be Bold<br />
+                                    <span>&#8226;</span>Focus on Impact<br />
+                                    <span>&#8226;</span>Move Fast<br />
+                                    <span>&#8226;</span>Be Open<br />
+                                    <span>&#8226;</span>Build Social Values<br />
+								<span>&#8226;</span>Don't take success for granted</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
+								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/bird.png" alt="" /></div><div class="content">
+								<h2>Risk taking</h2>
+								<p><blockquote>"""You miss 100% of the shots you don't take." -Wayne Gretzky." -Michael Scott."</blockquote> -Alexander Róbert</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/matrix.jpg" alt="" /></div><div class="content">
+								<h2>The fundamental theorem of algebra</h2>
+								<p><b>Theorem:</b> Every polynomial of degree n with real or complex coefficients has exactly n complex roots, when counting individually any repeated roots.<br />
+                                <b>Proof:</b> If α is a real or complex root of the polynomial p(z) of degree n with real or complex coefficients, then by dividing this polynomial by (z–α), using the well-known polynomial division process, one obtains p(z)=(z–α)q(z)+r, where q(z) has degree n–1 and r is a constant. But note that p(α)=r=0, so that p(z)=(z–α)q(z). Continuing by induction, we conclude that the original polynomial p(z) has exactly n complex roots, although some might be repeated.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/cat.jpg" alt="" /></div><div class="content">
+								<h2>Want to start your cooperation?</h2>
+								<p>It only takes a minute to change your life forever!<br />
+                                   Contact us and we'll handle the rest.</p>
+							</div>
+						</section>
+					</section>
+                
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            var isPlaying = false;
+            function play(){
+                var audio = document.getElementById("audio");
+                if (isPlaying){
+                    audio.pause();
+                    isPlaying=false;
+                }
+                else {
+                    audio.play();
+                    isPlaying= true;
+                }
+            }
+            </script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>About me</h2>
+							<p>A brief introduction about myself</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">								
+
+								<section>
+									<h4></h4>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/uu.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h5>Me</h5>
+                                    <p><span class="image left"><img src="images/lexi.jpg" alt="" /></span> A third-year student in Industrial Engineering at the University of Iceland, and will graduate with a bachelor's degree this June. My areas of interest are differential equations, books of Ragnar's equivalent, normal distribution and analytic hyperbolic geometry. During my undergraduate studies, I have been an assistant professor five times in the last two school years, twice in Linear Algebra, twice in Physical Science & Statistics and once in Physics. I have not worked while studying.</p>
+									<p>Through this course, I would like to gain a better experience and understanding of how the design of the product and its production takes place after an idea of a product has been found. The production process is an ideal course for me to gain experience in this important field. I will bring the course positivity, ambition and create a healthy and fun working environment into fablab. Overall, I am very interested in the projects ahead, where I can work on solving complex problems, my new reasoning and continue to increase my knowledge.</p>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>About the team</h2>
+							<p>A brief introduction to the other team members</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h4>The team</h4>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/daclub.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/keli.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/lexi.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/aron.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h5>The other team members</h5>
+									<p><span class="image left"><img src="images/keli1.jpg" alt="" /></span><b>Þorkell Helgason</b>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+									<p><span class="image right"><img src="images/aron1.jpg" alt="" /></span><b>Aron Óttarsson</b> is a very happy person who takes great pride in his work. He has many hobbies such as playing guitar and working on something manually, but he has also been practicing badminton for over 13 years and was part of the youth team, which has been declining after stress in mechanical engineering at the University of Iceland. When enrolled in mechanical engineering, Aron's priorities changed and he took on an exciting project through Team Spark, a development project within the University of Iceland where students design and construct an electric racing car from scratch. He started in the team airflow team that is designing the wings of the car, but after a few weeks, the board decided to put Aron in the team captain's position. It was a really demanding job, but instructive tasks involved planning the project, having an overview of the team and being a liaison with sponsors who help us with the production of the components of the system. After the team competition in Spain, I was asked to be on the next board and ended up with Aron taking over as project manager since the projects consisted mainly of organizing the team as a whole, all the projects within it, have an overview of the projects that were underway and organize the competition trips.</p>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Projects</h2>
+							<p>Detailed description of the course projects</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+                                
+                                <ul><h3><li><a href="proj1.html">Project 1</a></li></h3></ul>
+								<p>The first project consists of:</p>
+                                <p>1. Build an individual website with html in either English or Icelandic and document your work</p>
+                                <p>2. Upload your website to github using Git Bash</p>
+                                <p>3. Post it as a comment, besides your name, under the class google docs sheet</p>
+
+								<hr />
+
+								<ul><h3><li><a href="proj2.html">Project 2</a></li></h3></ul>
+								<p>The second project consists of:</p>
+								<p>1. Use a CAD software to build a parametric design of a construction kit</p>
+                                <p>2. Cut your design with a laser cutter</p>
+                                <p>3. Document the process and upload your design files</p>
+                                
+                                <hr />
+                                
+                                <ul><h3><li><a href="proj3.html">Project 3</a></li></h3></ul>
+								<p>The third project consists of:</p>
+								<p>1. Use a design software to make something that could not be made subtractively, and 3D print your design</p>
+                                <p>2. 3D scan something with 3D ph</p>
+                                <p>3. Document the process and upload your design files</p>
+                                
+                                <hr />
+                                
+                                <ul><h3><li><a href="projgr.html">The final project</a></li></h3></ul>
+								<p>The final project consists of:</p>
+								<p>1. Plan a final project that integrates some of the course subjects</p>
+                                <p>2. Your project should integrate some 2D and 3D elements</p>
+                                <p>3. Determine an intellectual property licensing</p>
+
+							</div>
+						</section>
+                        
+					</article>
+                
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Hours</h2>
+							<p>A diary-counter of the total study time on the course</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h4>Description</h4>
+									<p>Below there is a table describing and keeping track in detail how much time is spent on the projects in the course, as well as how this time is utilized. This can be extremely useful to hopefully help keeping the project at a steady pace throughout the lifetime of the course.</p>
+									<hr />
+									
+								</section>
+
+								<section>
+									<h4>Hours</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Date</th>
+													<th>Description</th>
+													<th>Time spent in minutes</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>								
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Project 1</h2>
+							<p>Documentation</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/sida.PNG" alt="" /></span></div>
+										</div>
+									</div>
+									<h4>The project description</h4>
+                                    <p><b>The first project consists of:</b></p>
+                                    <p>1. Build an individual website with html in either English or Icelandic and document your work<br>2. Upload your website to github using Git Bash<br>3. Post it as a comment, besides your name, under the class google docs sheet</p>
+                                    <p><b>Assignment completion checklist:</b></p>
+                                    <p>1. Have you made a website and described, step by step, how you did it<br>2. Have you introduced yourself and made a short but relevant resume<br>3. Have you documented the steps needed to upload the website<br>4. Have you introduced your group<br>5. Have you organized how you will manage your final project<br>6. Have you made a proposal for you final project<br>7. Have you made your code (in text format) accessible on your website<br>8. Have you provided relevant links you used and included all search "engine key words" you used</p>
+                                    
+                                    <h4>The project</h4>
+                                    
+									<p>The website used Brackets for programming and GitHub for version control. HTML5 UP was also used for templates on the website. A lot of time was spent filling out the website and deciding what to put in it and how it should be set up. Google was widely used to find solutions to various programming problems.</p>
+                                    
+									<p>An introduction about myself can be found in the about me section of the website.</p>
+                                    
+                                    <p><b>The steps needed to upload the website are as follows:</b><br><b>1.</b> Download Brackets<br><b>2.</b> Download Github<br><b>3.</b> Download a website template from HTML5 UP<br><b>4.</b> Fill in the website with all the relevent information<br><b>5.</b> Finish your design and make simple changes if needed</p>
+                                    
+                                    <p>An introduction about the group can be found in the about the team section of the website.</p>
+                                    
+                                    <p>The final project organization as well as the description of a proposal of the final project can be seen in the final project section in the project section of the website.</p>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Alexander Róbert Magnússon</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Alexander Róbert</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Projects</a></li>
+                                            <li><a href="hours.html">Hours</a></li>
+											<li><a href="elements.html">About me</a></li>
+											<li><a href="aboutgr.html">About the team</a></li>
+                                            <li><a href="txtfrmt.html">Code</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>About the team</h2>
+							<p>A brief introduction to the other team members</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h4>The team</h4>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="images/daclub.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/keli.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/lexi.jpg" alt="" /></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/aron.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h5>The other team members</h5>
+									<p><span class="image left"><img src="images/keli1.jpg" alt="" /></span><b>Þorkell Helgason</b>Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien. Morbi mattis mi consectetur tortor elementum, varius pellentesque velit convallis. Aenean tincidunt lectus auctor mauris maximus, ac scelerisque ipsum tempor. Duis vulputate ex et ex tincidunt, quis lacinia velit aliquet. Duis non efficitur nisi, id malesuada justo. Maecenas sagittis felis ac sagittis semper. Curabitur purus leo, tempus sed finibus eget, fringilla quis risus. Maecenas et lorem quis sem varius sagittis et a est. Maecenas iaculis iaculis sem. Donec vel dolor at arcu tincidunt bibendum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce ut aliquet justo. Donec id neque ipsum. Integer eget ultricies odio. Nam vel ex a orci fringilla tincidunt. Aliquam eleifend ligula non velit accumsan cursus. Etiam ut gravida sapien.</p>
+									<p><span class="image right"><img src="images/aron1.jpg" alt="" /></span><b>Aron Óttarsson</b> is a very happy person who takes great pride in his work. He has many hobbies such as playing guitar and working on something manually, but he has also been practicing badminton for over 13 years and was part of the youth team, which has been declining after stress in mechanical engineering at the University of Iceland. When enrolled in mechanical engineering, Aron's priorities changed and he took on an exciting project through Team Spark, a development project within the University of Iceland where students design and construct an electric racing car from scratch. He started in the team airflow team that is designing the wings of the car, but after a few weeks, the board decided to put Aron in the team captain's position. It was a really demanding job, but instructive tasks involved planning the project, having an overview of the team and being a liaison with sponsors who help us with the production of the components of the system. After the team competition in Spain, I was asked to be on the next board and ended up with Aron taking over as project manager since the projects consisted mainly of organizing the team as a whole, all the projects within it, have an overview of the projects that were underway and organize the competition trips.</p>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/alexander.r.magnusson" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/alexanderrm96/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                            <li><a href="mailto:alexander96rm@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.ksi.is/mot/leikmadur/?leikmadur=181360#" class="icon sports fas fa-futbol"><span class="label">Dribbble</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; </li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
