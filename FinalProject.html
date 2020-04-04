@@ -284,18 +284,22 @@
                                     
                                     <h4>Simulations</h4>
                                     
+                                    Fræsing á plötum til að halda upp vínflöskunum:
+                                    
                                     <div style="text-align:center"> 
-                                        <button onclick="playPause()">Play/Pause</button> 
-                                        <button onclick="makeBig()">Big</button>
-                                        <button onclick="makeSmall()">Small</button>
-                                        <button onclick="makeNormal()">Normal</button>
+                                        <button onclick="playPauses()">Play/Pause</button> 
+                                        <button onclick="makeBiger()">Big</button>
+                                        <button onclick="makeSmaller()">Small</button>
+                                        <button onclick="makeNormali()">Normal</button>
                                         <br><br>
                                         <video id="video1" width="800">
-                                            <source src="/images/Milling20mmTrimmed.mp4" type="video/mp4">
+                                            <source src="/images/final.mp4" type="video/mp4">
                                             <source src="/images/song.ogg" type="video/ogg">
                                             Your browser does not support HTML5 video.
                                         </video>
                                     </div>
+                                    
+                                    Fræsing fyrir molding and casting:
                                     
                                     <div style="text-align:center"> 
                                         <button onclick="playPause()">Play/Pause</button> 
@@ -304,7 +308,7 @@
                                         <button onclick="makeNormal()">Normal</button>
                                         <br><br>
                                         <video id="video2" width="800">
-                                            <source src="/images/myndb2.mp4" type="video/mp4">
+                                            <source src="/images/myndband2.mp4" type="video/mp4">
                                             <source src="/images/song.ogg" type="video/ogg">
                                             Your browser does not support HTML5 video.
                                         </video>
@@ -314,7 +318,7 @@
                                     <p>1. Walnut: 900x100x10mm<br>2. Oak: 285x100x20mm<br>3. Plastic (moulding): 100x40x40mm<br>4. Epoxy (casting): 2L</p>
                                     
                                     <h4>Key Words and links</h4>
-                                    <p><li>Modern wine rack ideas</li><li>Can you store wine upside down?</li><li>Grabcad wine bottle</li><li>750 ml wine bottle dimensions</li><li>Classic wine glass dimensions</li><li>How to create a mold?</li><li>Wine glass dimensions</li><li>Glass holder</li><li>Inventor best strategy for finishing fillets cam</li><li>https://choosealicense.com/</li></p>
+                                    <p><li>Modern wine rack ideas</li><li>Can you store wine upside down?</li><li>Grabcad wine bottle</li><li>750 ml wine bottle dimensions</li><li>Classic wine glass dimensions</li><li>How to create a mold?</li><li>Wine glass dimensions</li><li>Glass holder</li><li>Inventor best strategy for finishing fillets cam</li><li>https://choosealicense.com/</li><li>https://www.w3schools.com/html/html5_video.asp</li></p>
 
 								</section>
                                 
@@ -353,25 +357,25 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script> 
-                var myVideo = document.getElementById("video1"); 
+                var myVideo1 = document.getElementById("video1"); 
 
-                function playPause() { 
-                    if (myVideo.paused) 
-                        myVideo.play(); 
+                function playPauses() { 
+                    if (myVideo1.paused) 
+                        myVideo1.play(); 
                     else 
-                        myVideo.pause(); 
+                        myVideo1.pause(); 
                     } 
 
-                    function makeBig() { 
-                        myVideo.width = 1200; 
+                    function makeBiger() { 
+                        myVideo1.width = 1200; 
                     } 
 
-                    function makeSmall() { 
-                        myVideo.width = 500; 
+                    function makeSmaller() { 
+                        myVideo1.width = 500; 
                     } 
 
-                    function makeNormal() { 
-                        myVideo.width = 800; 
+                    function makeNormali() { 
+                        myVideo1.width = 800; 
                     } 
             </script>
             <script> 
