@@ -316,6 +316,24 @@
                                     
                                     <br><br>
                                     
+                                    
+                                    <h4>The final video</h4>
+                                    
+                                    <div style="text-align:center"> 
+                                        <video id="video3" width="800">
+                                            <source src="/images/Framleidslloka.mp4" type="video/mp4">
+                                            <source src="/images/song.ogg" type="video/ogg">
+                                            Your browser does not support HTML5 video.
+                                        </video>
+                                        <br>
+                                        <button onclick="playPauser()">Play/Pause</button> 
+                                        <button onclick="makeBigr()">Big</button>
+                                        <button onclick="makeSmallr()">Small</button>
+                                        <button onclick="makeNormalr()">Normal</button>
+                                    </div>
+                                    
+                                    <br><br>
+                                    
                                     <h4>Bill of Materials</h4>
                                     <p>1. Walnut: 900x100x10mm<br>2. Oak: 285x100x20mm<br>3. Plastic (moulding): 100x40x40mm<br>4. Epoxy (casting): 2L</p>
                                     
@@ -400,6 +418,28 @@
 
                     function makeNormal() { 
                         myVideo.width = 800; 
+                    } 
+            </script>
+            <script> 
+                var myVideo3 = document.getElementById("video3"); 
+
+                function playPauser() { 
+                    if (myVideo3.paused) 
+                        myVideo3.play(); 
+                    else 
+                        myVideo3.pause(); 
+                    } 
+
+                    function makeBigr() { 
+                        myVideo3.width = 1200; 
+                    } 
+
+                    function makeSmallr() { 
+                        myVideo3.width = 500; 
+                    } 
+
+                    function makeNormalr() { 
+                        myVideo3.width = 800; 
                     } 
             </script>
 
